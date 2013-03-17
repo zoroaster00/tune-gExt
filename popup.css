@@ -1,0 +1,35 @@
+body {
+	min-width: 357px;
+	overflow-x: hidden;
+}
+
+img {
+	margin: 5px;
+	border: 2px solid black;
+	vertical-align: middle;
+	width: 50px;
+	height: 50px;
+}
+
+#logo {
+	background: url('coin.png') no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+}
+#logo:hover {
+-webkit-animation-name: scaleThis;
+-webkit-animation-duration:120ms;
+-webkit-animation-iteration-count: 20;
+-webkit-animation-timing-function:ease-in-out;
+}
+@-webkit-keyframes rotateThis {
+0% { -webkit-transform:scale(1) rotate(0deg); }
+10% { -webkit-transform:scale(1.1) rotate(0deg); }
+100% {-webkit-transform:scale(1.1) rotate(360deg); }
+}
+@-webkit-keyframes scaleThis {
+0% { -webkit-transform:scaleX(1); }
+50% { -webkit-transform:scaleX(0.05); }
+100% {-webkit-transform:scaleX(1); }
+}
